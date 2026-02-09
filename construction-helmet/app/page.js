@@ -1,14 +1,14 @@
-import About from "@/components/About";
-import CTA from "@/components/CTA";
-import ExpertTeam from "@/components/ExpertTeam";
-import Hero from "@/components/Hero";
+import About from "@/components/home/About";
+import CTA from "@/components/home/CTA";
+import ExpertTeam from "@/components/home/ExpertTeam";
+import Hero from "@/components/home/Hero";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
-import Projects from "@/components/Projects";
-import Services from "@/components/Services";
-import Stats from "@/components/Stats";
-import Testimonial from "@/components/Testimonial";
-import WhyChooseUs from "@/components/WhyChooseUs";
+import Projects from "@/components/home/Projects";
+import Services from "@/components/home/Services";
+import Stats from "@/components/home/Stats";
+import Testimonial from "@/components/home/Testimonial";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
 
 export default function Home() {
   return (
