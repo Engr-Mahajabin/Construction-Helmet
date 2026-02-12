@@ -2,17 +2,14 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform, animate, useInView } from "framer-motion";
 
-// কাউন্টার কম্পোনেন্ট (সংশোধিত)
 const Counter = ({ value }) => {
     const count = useMotionValue(0);
-    // useTransform দিয়ে নাম্বারটিকে রাউন্ড করা হচ্ছে
     const rounded = useTransform(count, (latest) => Math.round(latest));
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     useEffect(() => {
         if (isInView) {
-            // value থেকে শুধু নাম্বার আলাদা করা (যেমন: "98%" থেকে ৯৮)
             const numericValue = parseInt(value.replace(/[^0-9]/g, ""));
             const controls = animate(count, numericValue, {
                 duration: 2.5,
@@ -24,9 +21,6 @@ const Counter = ({ value }) => {
 
     return (
         <span ref={ref} className="text-8xl md:text-9xl font-black text-slate-900 tracking-tighter leading-none flex items-center">
-            {/* React সরাসরি MotionValue রেন্ডার করতে পারে না। 
-               তাই motion.span এর ভেতরে text content হিসেবে দিতে হয়। 
-            */}
             <motion.span>{rounded}</motion.span>
             {value.includes("%") && <span>%</span>}
         </span>
@@ -43,8 +37,6 @@ export default function AboutStats() {
     return (
         <section className="max-w-[1600px] mx-auto px-6 py-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-
-                {/* Image Section: (৭ কলাম জায়গা দখল করবে) */}
                 <div className="lg:col-span-7 h-[500px] md:h-[650px] w-full overflow-hidden">
                     <img
                         src="/img/about/about-stats.png"
@@ -52,8 +44,6 @@ export default function AboutStats() {
                         alt="Construction Stats"
                     />
                 </div>
-
-                {/* Text Section: (৫ কলাম জায়গা দখল করবে) */}
                 <div className="lg:col-span-5 flex flex-col space-y-16 lg:pl-10">
                     {stats.map((item, index) => (
                         <div key={index} className="flex flex-col group">

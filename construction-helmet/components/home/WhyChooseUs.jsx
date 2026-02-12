@@ -15,17 +15,14 @@ export default function WhyChooseUs() {
 
     return (
         <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            {/* Left Side: Headings */}
             <div>
                 <span className="text-sm uppercase tracking-[0.2em] font-medium text-gray-500">
                     why choose us
                 </span>
-                <h2 className="mt-4 text-5xl md:text-6xl font-bold leading-[1.1] uppercase tracking-tighter">
+                <h2 className="mt-4 text-5xl md:text-6xl font-bold leading-[1.1] uppercase">
                     Where Trust <br /> Meets Excellence
                 </h2>
             </div>
-
-            {/* Right Side: Shadcn Accordion */}
             <div className="w-full">
                 <Accordion type="single" collapsible className="w-full border-t border-black/10">
                     {data.map((item) => (

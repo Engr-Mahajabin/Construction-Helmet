@@ -24,7 +24,6 @@ export default function TestimonialSlider() {
 
     return (
         <section className="relative w-full bg-white pt-24 pb-0 overflow-hidden">
-            {/* Black Card & Slider Container */}
             <div className="max-w-5xl mx-auto px-6 relative z-20">
                 <Carousel
                     setApi={setApi}
@@ -36,7 +35,6 @@ export default function TestimonialSlider() {
                             <CarouselItem key={item.id}>
                                 <div className="bg-[#181818] text-white p-10 md:p-16 lg:p-20 min-h-[450px] flex flex-col justify-between">
                                     <div>
-                                        {/* Double Quote Icon Outline Style */}
                                         <div className="flex gap-1 mb-8">
                                             <Quote
                                                 size={48}
@@ -45,13 +43,11 @@ export default function TestimonialSlider() {
                                             />
                                         </div>
 
-                                        {/* Testimonial Quote */}
                                         <p className="text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed tracking-tight mb-12">
                                             “ {item.quote} ”
                                         </p>
                                     </div>
 
-                                    {/* Author Info & Dots */}
                                     <div className="flex justify-between items-end border-t border-white/10 pt-8">
                                         <div>
                                             <h4 className="font-bold text-lg uppercase tracking-widest">
@@ -62,7 +58,6 @@ export default function TestimonialSlider() {
                                             </p>
                                         </div>
 
-                                        {/* Pagination Dots */}
                                         <div className="flex gap-3 mb-2">
                                             {testimonials.map((_, i) => (
                                                 <button
@@ -81,7 +76,6 @@ export default function TestimonialSlider() {
                 </Carousel>
             </div>
 
-            {/* Overlapping Background Image */}
             <div className="-mt-40 w-full h-[500px] relative z-10">
                 <Image
                     src="/img/testimonials/testimonial_bg.jpg"

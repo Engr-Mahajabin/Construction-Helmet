@@ -1,5 +1,4 @@
 export default function GoogleMap() {
-    // আপনার ইমেজে দেওয়া এড্রেসটি এনকোড করা হয়েছে
     const address = "123+Main+Street,+New+York,+NY+10001";
     const mapUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${address}`;
 

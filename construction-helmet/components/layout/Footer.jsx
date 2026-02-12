@@ -6,11 +6,9 @@ export default function Footer() {
     return (
         <footer className="bg-white pt-20 pb-10">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-gray-100 pb-16">
-
-                {/* Column 1: Brand & About */}
                 <div className="space-y-6">
                     <div className="flex items-center gap-2">
-                        <div className="w-6 h-6 bg-[#ff5c35] transform rotate-45 flex items-center justify-center">
+                        <div className="w-6 h-6 bg-yellow-600 transform rotate-45 flex items-center justify-center">
                             <span className="text-white text-[10px] -rotate-45 font-bold">S</span>
                         </div>
                         <span className="text-2xl font-bold tracking-tighter uppercase italic">structa</span>
@@ -26,7 +24,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Column 2: Quick Links */}
                 <div>
                     <h4 className="font-bold text-sm uppercase tracking-widest mb-6 text-gray-800">Quick Links</h4>
                     <ul className="space-y-3 text-sm text-gray-500">
@@ -38,7 +35,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Column 3: Services */}
                 <div>
                     <h4 className="font-bold text-sm uppercase tracking-widest mb-6 text-gray-800">Services</h4>
                     <ul className="space-y-3 text-sm text-gray-500">
@@ -49,7 +45,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Column 4: Contact */}
                 <div>
                     <h4 className="font-bold text-sm uppercase tracking-widest mb-6 text-gray-800">Contact</h4>
                     <ul className="space-y-4 text-sm text-gray-500">
@@ -60,7 +55,6 @@ export default function Footer() {
                 </div>
             </div>
 
-            {/* Bottom Copyright */}
             <div className="text-center pt-8 text-xs text-gray-400 font-medium">
                 © {currentYear} MirrorTheme. All rights reserved.
             </div>
@@ -68,10 +62,9 @@ export default function Footer() {
     );
 }
 
-// Helper Components
 function FooterLink({ children, href }) {
     return (
-        <a href={href} className="hover:text-[#ff5c35] transition-colors duration-300">
+        <a href={href} className="hover:text-yellow-600 transition-colors duration-300">
             {children}
         </a>
     );
@@ -79,7 +72,7 @@ function FooterLink({ children, href }) {
 
 function SocialIcon({ icon }) {
     return (
-        <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-[#ff5c35] hover:text-white transition-all cursor-pointer">
+        <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-yellow-600 hover:text-white transition-all cursor-pointer">
             {icon}
         </div>
     );

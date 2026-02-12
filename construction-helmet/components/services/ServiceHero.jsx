@@ -5,7 +5,7 @@ export default function AboutHero() {
                 <h1 className="text-6xl md:text-7xl font-black text-slate-900 uppercase leading-none">
                     Builing Timeless <br />spaces
                 </h1>
-                <p className="text-orange-600 font-bold uppercase text-sm tracking-widest mb-2">
+                <p className="text-orange-600 font-bold uppercase text-sm mb-2">
                     our services
                 </p>
             </div>

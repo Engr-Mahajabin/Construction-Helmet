@@ -22,7 +22,6 @@ export default function Services() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
-                    {/* LEFT SIDE: Tabs Menu */}
                     <div className="lg:col-span-3 flex flex-col gap-2">
                         {servicesData.map((item) => (
                             <button
@@ -39,7 +38,6 @@ export default function Services() {
                         ))}
                     </div>
 
-                    {/* RIGHT SIDE: Dynamic Content */}
                     <div className="lg:col-span-9 bg-white p-10 shadow-xl min-h-[500px]">
                         <AnimatePresence mode="wait">
                             <motion.div
@@ -50,7 +48,6 @@ export default function Services() {
                                 transition={{ duration: 0.3 }}
                                 className="grid md:grid-cols-2 gap-10"
                             >
-                                {/* Images */}
                                 <div className="grid grid-rows-2 gap-4">
                                     {activeTab.images.map((img, idx) => (
                                         <div key={idx} className="bg-gray-200 h-48 w-full overflow-hidden">
@@ -59,7 +56,6 @@ export default function Services() {
                                     ))}
                                 </div>
 
-                                {/* Text Content */}
                                 <div>
                                     <h3 className="text-3xl font-bold mb-4">{activeTab.title}</h3>
                                     <p className="text-gray-500 mb-6 leading-relaxed">{activeTab.desc}</p>

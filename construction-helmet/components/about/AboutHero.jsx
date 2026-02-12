@@ -5,7 +5,7 @@ export default function AboutHero() {
                 <h1 className="text-6xl md:text-7xl font-black text-slate-900 uppercase leading-none">
                     Crafting <br /> Structures for a <br /> better future
                 </h1>
-                <p className="text-orange-600 font-bold uppercase text-sm tracking-widest mb-2">
+                <p className="text-yellow-600 font-bold uppercase text-sm tracking-widest mb-2">
                     about our structa construction company
                 </p>
             </div>

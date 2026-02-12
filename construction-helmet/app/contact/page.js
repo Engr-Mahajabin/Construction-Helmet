@@ -8,16 +8,14 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      {/* 1. Hero Title Section */}
       <section className="bg-white py-20 px-6 text-center">
         <h1 className="text-6xl md:text-8xl font-black text-slate-900 uppercase tracking-tighter leading-none">
           Need Help? Just <br /> Message Us
         </h1>
-        <p className="mt-6 text-orange-600 font-bold uppercase tracking-widest text-sm">
+        <p className="mt-6 text-yellow-600 font-bold uppercase tracking-widest text-sm">
           contact with us
         </p>
       </section>
-      {/* 2. Banner Image Section */}
       <div className="w-full h-[500px] relative">
         <img
           src="/img/contact/contact-bg.png"
@@ -25,18 +23,15 @@ export default function ContactPage() {
           className="w-full h-full object-cover"
         />
       </div>
-      {/* 3. Main Contact Content */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           <ContactInfo />
           <div className="lg:-mt-40 z-10">
             {" "}
-            {/* কার্ডটি ইমেজের ওপর কিছুটা উঠে থাকবে */}
             <ContactForm />
           </div>
         </div>
       </section>
-      {/* 4. Google Map Placeholder */}
       <div className="w-full h-96 grayscale contrast-125 bg-gray-200 mt-10 mb-10">
         <GoogleMap />
       </div>

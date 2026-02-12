@@ -9,7 +9,7 @@ const ProgressBar = ({ label, percentage }) => {
     return (
         <div className="space-y-2" ref={ref}>
             <div className="flex justify-between items-center">
-                <span className="font-bold text-slate-900 uppercase text-sm tracking-wider">
+                <span className="font-bold text-slate-900 uppercase text-sm">
                     {label}
                 </span>
                 <span className="text-sm font-bold text-gray-500">{percentage}%</span>
@@ -19,7 +19,7 @@ const ProgressBar = ({ label, percentage }) => {
                     initial={{ width: 0 }}
                     animate={isInView ? { width: `${percentage}%` } : { width: 0 }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
-                    className="h-full bg-orange-600"
+                    className="h-full bg-yellow-600"
                 />
             </div>
         </div>
@@ -49,7 +49,7 @@ export default function ServiceContent() {
                 {/* Right Side: Content */}
                 <div className="space-y-8">
                     <div>
-                        <p className="text-orange-600 font-bold uppercase text-xs tracking-[0.2em] mb-4">
+                        <p className="text-yellow-600 font-bold uppercase text-xs tracking-[0.2em] mb-4">
                             why choose structa
                         </p>
                         <h2 className="text-4xl md:text-6xl font-black text-slate-900 uppercase leading-[1.1] tracking-tighter">
