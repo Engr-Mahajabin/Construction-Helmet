@@ -9,7 +9,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="max-w-[1280px] mx-auto px-4">
       <Navbar />
       <AboutHero />
       <AboutCompany />

@@ -12,7 +12,7 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="max-w-[1280px] mx-auto px-4">
       <Navbar />
       <Hero />
       <About />

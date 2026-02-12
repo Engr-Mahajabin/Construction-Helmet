@@ -6,7 +6,7 @@ import { projectsData } from "@/data/ProjectsData";
 
 export default function ProjectsListPage() {
   return (
-    <>
+    <div className="max-w-[1280px] mx-auto px-4">
       <Navbar />
       <main className="bg-gray-50 min-h-screen py-16">
         <div className="container mx-auto px-4">
@@ -27,6 +27,6 @@ export default function ProjectsListPage() {
       </main>
       <CTA />
       <Footer />
-    </>
+    </div>
   );
 }

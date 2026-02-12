@@ -10,7 +10,7 @@ export default async function ProjectDetailsPage({ params }) {
   }
 
   return (
-    <div className="container mx-auto py-20 px-4">
+    <div className="container mx-auto py-20 px-4 max-w-[1280px]">
       <h1 className="text-4xl font-bold">{project.title}</h1>
       <p className="text-yellow-500 font-medium">{project.category}</p>
 

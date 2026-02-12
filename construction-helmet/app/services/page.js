@@ -8,7 +8,7 @@ import ServiceHero from "@/components/services/ServiceHero";
 
 const ServicePage = () => {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="max-w-[1280px] mx-auto px-4">
       <Navbar />
       <ServiceHero />
       <ServiceContent />

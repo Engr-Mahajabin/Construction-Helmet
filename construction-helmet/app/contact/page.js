@@ -6,7 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function ContactPage() {
   return (
-    <>
+    <div className="max-w-[1280px] mx-auto px-4">
       <Navbar />
       <section className="bg-white py-20 px-6 text-center">
         <h1 className="text-6xl md:text-8xl font-black text-slate-900 uppercase tracking-tighter leading-none">
@@ -36,6 +36,6 @@ export default function ContactPage() {
         <GoogleMap />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
