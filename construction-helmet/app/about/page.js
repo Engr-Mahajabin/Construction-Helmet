@@ -9,7 +9,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function AboutPage() {
   return (
-    <main className="max-w-[1280px] mx-auto">
+    <main className="max-w-[2480px] mx-auto">
       <Navbar />
       <AboutHero />
       <AboutCompany />

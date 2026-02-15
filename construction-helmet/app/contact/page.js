@@ -6,7 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function ContactPage() {
   return (
-    <div className="max-w-[1280px] mx-auto">
+    <div className="max-w-[2480px] mx-auto">
       <Navbar />
       <section className="bg-white py-20 px-6 text-center">
         <h1 className="text-6xl md:text-8xl font-black text-slate-900 uppercase tracking-tighter leading-none">
