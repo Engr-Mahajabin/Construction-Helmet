@@ -1,5 +1,5 @@
-import ContactForm from "@/components/Contact/ContactForm";
-import ContactInfo from "@/components/Contact/ContactInfo";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
 import GoogleMap from "@/components/contact/GoogleMap";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
