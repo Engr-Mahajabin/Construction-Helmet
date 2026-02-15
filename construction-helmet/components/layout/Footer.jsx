@@ -9,9 +9,9 @@ export default function Footer() {
                 <div className="space-y-6">
                     <div className="flex items-center gap-2">
                         <div className="w-6 h-6 bg-yellow-600 transform rotate-45 flex items-center justify-center">
-                            <span className="text-white text-[10px] -rotate-45 font-bold">S</span>
+                            <span className="text-white text-[10px] -rotate-45 font-bold">H</span>
                         </div>
-                        <span className="text-2xl font-bold tracking-tighter uppercase italic">structa</span>
+                        <span className="text-2xl font-bold tracking-tighter uppercase italic">Construct</span>
                     </div>
                     <p className="text-gray-500 text-sm leading-relaxed max-w-[280px]">
                         With over a decade of experience, we specialize in residential and commercial construction, renovations, and project management.
@@ -30,7 +30,6 @@ export default function Footer() {
                         <li><FooterLink href="#">About us</FooterLink></li>
                         <li><FooterLink href="#">Our team</FooterLink></li>
                         <li><FooterLink href="#">Projects</FooterLink></li>
-                        <li><FooterLink href="#">Blogs</FooterLink></li>
                         <li><FooterLink href="#">Contact</FooterLink></li>
                     </ul>
                 </div>
@@ -49,14 +48,14 @@ export default function Footer() {
                     <h4 className="font-bold text-sm uppercase tracking-widest mb-6 text-gray-800">Contact</h4>
                     <ul className="space-y-4 text-sm text-gray-500">
                         <li>123 Main Street New York,<br /> NY 10001</li>
-                        <li className="font-bold text-gray-800">structa@mail.com</li>
+                        <li className="font-bold text-gray-800">construct@mail.com</li>
                         <li className="font-bold text-gray-800">+(409) 537-2410</li>
                     </ul>
                 </div>
             </div>
 
             <div className="text-center pt-8 text-xs text-gray-400 font-medium">
-                © {currentYear} MirrorTheme. All rights reserved.
+                © {currentYear} Mahajabin Akter Ritu. All rights reserved.
             </div>
         </footer>
     );
